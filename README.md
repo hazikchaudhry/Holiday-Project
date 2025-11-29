@@ -40,3 +40,4 @@ Majority of the models come from hugging face..
 ### Image Depth Analysis
 
 Current Model expriment: 
+>> https://huggingface.co/xingyang1/Distill-Any-Depth-Large-hf
