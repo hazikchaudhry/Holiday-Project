@@ -39,5 +39,25 @@ Majority of the models come from hugging face..
 
 ### Image Depth Analysis
 
-Current Model expriment: 
+Current Model experiment: 
 >> https://huggingface.co/xingyang1/Distill-Any-Depth-Large-hf
+
+#### Usage
+
+1. Open terminal and navigate to the project root folder
+2. Navigate to the vision folder: `cd vision`
+3. Activate the virtual environment: `source ../.venv/bin/activate`
+4. Install required packages: `pip install -r requirements.txt`
+5. Run the depth estimation script: `python main.py`
+
+The script downloads an image and creates a depth map showing how far objects are from the camera. Closer objects appear darker, distant objects appear lighter. This depth information helps the robotic arm understand the 3D layout of the scene to navigate around obstacles and locate the cup.
+
+next step is perhaps seeing how to look at distances or using this info in a way.
+
+#### Results
+
+**Original Image:**
+![Original Image](vision/original.jpg)
+
+**Depth Map:**
+![Depth Map](vision/result.png)

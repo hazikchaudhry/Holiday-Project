@@ -23,6 +23,9 @@ print("Loading image from URL...")
 url = 'http://images.cocodataset.org/val2017/000000039769.jpg'
 image = Image.open(requests.get(url, stream=True).raw)
 
+# save original image
+image.save("original_image.jpg")
+
 
 # inference
 depth = pipe(image)["depth"]
